@@ -1,6 +1,6 @@
 #miCarrusel {
   position: relative;
-  background-color: lightgray;
+  background-color: black;
   height: 300px;
   margin: 2em 0;
   width: 100%;
@@ -39,7 +39,7 @@
   transition: all .15s ease;
 }
 
-#miCarrusel > ul.botones > li > a:hover, #miCarrusel > ul.botones > li > a.active {
+#miCarrusel > ul.botones > li > a:hover, #miCarrusel > ul.botones > li > a.activo {
   background-color: white;
   border-color: rgb(150,150,150);
 }
@@ -48,38 +48,22 @@
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(100%);
+  transform: translateX(110%);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   width: 100%;
   transition: all 1.75s ease-in-out;
-}
-
-#miCarrusel > .elementos div.eleA {
-  background-color: blue;
-  z-index: 10;
-}
-
-#miCarrusel > .elementos div.eleB {
-  z-index: 10;
-}
-
-#miCarrusel > .elementos div.eleC {
-  z-index: 10;
-}
-
-#miCarrusel > .elementos div.eleD {
-  z-index: 10;
-}
-
-#miCarrusel > .elementos div.eleE {
+  filter: grayscale(100%);
+  filter: blur(15px);
   z-index: 10;
 }
 
 #miCarrusel > .elementos div.activo {
   transform: translateX(0);
+  cursor: pointer;
+  filter: none;
 }
 
 
