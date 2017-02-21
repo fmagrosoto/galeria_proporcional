@@ -1,0 +1,31 @@
+{
+  "name": "carrusel_proporcional",
+  "version": "1.0.0",
+  "description": "Alternativa de carrusel para mostrar fotos a tamaño proporcional de la pantalla.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fmagrosoto/galeria_proporcional.git"
+  },
+  "keywords": [
+    "fmagrosoto",
+    "carrusel"
+  ],
+  "author": "Fernando Magrosoto V.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fmagrosoto/galeria_proporcional/issues"
+  },
+  "homepage": "https://github.com/fmagrosoto/galeria_proporcional#readme",
+  "devDependencies": {
+    "express": "^4.14.1",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-livereload": "^3.8.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.1"
+  }
+}
