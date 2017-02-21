@@ -29,7 +29,7 @@ gulp.task('liveHTML', function () {
 });
 
 
-gulp.task('default', ['minJS','liveHTML','sass']);
+gulp.task('default', ['minJS','minCSS','liveHTML']);
 
 gulp.task('watch', function () {
   livereload.listen();
