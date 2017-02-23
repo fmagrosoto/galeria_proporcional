@@ -25,61 +25,50 @@
 
     <div class="jumbotron">
       <div class="container">
-        <div class="row">
-          <div class="col-md-8 col-md-offset-2">
-            <h1>Carrusel responsivo</h1>
-            <p>Una alternativa para mostrar una galería de imágenes responsiva.</p>
+        <div class="col-md-8 col-md-offset-2">
+          <h1>Galería responsiva</h1>
+          <p>Alternativa de galería para mostrar fotos de manera responsiva.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="col-md-8 col-md-offset-2">
+        <div id="miCarrusel">
+
+          <ul class="botones">
+            <li><a href="#" data-pos="0"></a></li>
+            <li><a href="#" data-pos="1"></a></li>
+            <li><a href="#" data-pos="2"></a></li>
+            <li><a href="#" data-pos="3"></a></li>
+            <li><a href="#" data-pos="4"></a></li>
+          </ul>
+
+          <div class="elementos">
+            <div data-pos="0" style="background-image: url(/img/img01.jpg)"></div>
+            <div data-pos="1" style="background-image: url(/img/img02.jpg)"></div>
+            <div data-pos="2" style="background-image: url(/img/img03.jpg)"></div>
+            <div data-pos="3" style="background-image: url(/img/img04.jpg)"></div>
+            <div data-pos="4" style="background-image: url(/img/img05.jpg)"></div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="container">
-
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <div id="miCarrusel">
-            <ul class="botones">
-              <li><a href="#" data-pos="0"></a></li>
-              <li><a href="#" data-pos="1"></a></li>
-              <li><a href="#" data-pos="2"></a></li>
-              <li><a href="#" data-pos="3"></a></li>
-              <li><a href="#" data-pos="4"></a></li>
-            </ul>
-            <div class="elementos">
-              <div class="elemento eleA" data-pos="0" style="background-image: url(/img/img01.jpg)"></div>
-              <div class="elemento eleB" data-pos="1" style="background-image: url(/img/img02.jpg)"></div>
-              <div class="elemento eleC" data-pos="2" style="background-image: url(/img/img03.jpg)"></div>
-              <div class="elemento eleD" data-pos="3" style="background-image: url(/img/img04.jpg)"></div>
-              <div class="elemento eleE" data-pos="4" style="background-image: url(/img/img05.jpg)"</div>
-            </div>
-          </div>
-        </div>
+      <div class="col-md-8 col-md-offset-2">
+        <p>Esto no es propiamente una aplicación de un carrusel, sino un <i>script</i>
+        que ajuste la imagen al tamaño de la pantalla, es decir, proporcional o como
+        se diría en el mundo del HTML, <i>responsivo</i>.</p>
       </div>
+    </div>
 
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-          <blockquote>
-            Esto no es propiamente una aplicación de un carrusel, sino un <i>script</i> que
-            ajuste la imagen al tamaño de la pantalla, es decir, proporcional al
-            <i>viewport</i> o como se diría en el mundo del HTML, <i>responsivo</i>.
-          </blockquote>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-12">
-          <hr>
-        </div>
-      </div>
-
-      <div class="row">
-        <footer class="col-md-8 col-md-offset-2">
-          <p>Creado por: Fernando Magrosoto V.</p>
-          <p>Copyleft 2017</p>
-          <p>Sígueme en <a href="https://twitter.com/fmagrosoto">Twitter</a></p>
-        </footer>
-      </div>
+    <div class="container">
+      <footer class="col-md-8 col-md-offset-2">
+        <p><strong>Galería Responsiva.</strong></p>
+        <p>&copy; Copyleft 2017, Fernando Magrosoto.</p>
+        <p>Sígueme en <a href="https://twitter.com/fmagrosoto">Twitter</a>.</p>
+      </footer>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
