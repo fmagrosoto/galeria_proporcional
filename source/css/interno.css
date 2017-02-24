@@ -1,3 +1,84 @@
+#cortinilla {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,.85);
+  z-index: 899;
+}
+
+#caja {
+  position: absolute;
+  background-color: gray;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 5px;
+  height: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 4px white solid;
+  box-shadow: 15px 15px 20px rgba(0,0,0,.75);
+  overflow: hidden;
+  z-index: 998;
+}
+
+#caja .izq {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255,255,255,.35);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  z-index: 999;
+}
+
+#caja .izq:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+#caja .der {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255,255,255,.35);
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  transform: translateX(50%);
+  border-radius: 50%;
+  z-index: 999;
+}
+
+#caja .der:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+#caja .flechaD {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-80%, -50%);
+  font-size: 150%;
+  color: black;
+}
+
+#caja .flechaI {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-10%, -50%);
+  font-size: 150%;
+  color: black;
+}
+
+
+
 #miCarrusel {
   position: relative;
   background-color: black;
@@ -48,7 +129,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateX(110%);
+  transform: translateX(105%);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,7 +137,7 @@
   width: 100%;
   transition: all 1.75s ease-in-out;
   filter: grayscale(100%);
-  filter: blur(15px);
+  filter: blur(5px);
   z-index: 10;
 }
 
