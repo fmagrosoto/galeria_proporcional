@@ -44,6 +44,7 @@
     });
     $('#caja').append('<div class="izq"><span class="glyphicon glyphicon-triangle-left flechaI"></span></div>');
     $('#caja').append('<div class="der"><span class="glyphicon glyphicon-triangle-right flechaD"></span></div>');
+    $('#caja').append('<a href="" class="cerrar"><span class="glyphicon glyphicon-remove"></span></a>');
 
     $('.flechaI').click(function () {
       var previo = p - 1;
@@ -59,6 +60,12 @@
         siguiente = 0;
       }
       agrandar(siguiente);
+    });
+
+    $('.cerrar').click(function () {
+      $('#cortinilla').fadeout('fast', function(){
+        $(this).remove();
+      });
     });
   }
 
